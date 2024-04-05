@@ -11,22 +11,18 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #06283d;
+  background-color: #1b5213;
 }
 
-.container{
-  position: relative;
-  width: 400px;
-  height: 105px; /*cambiar a 105 luego*/ /*cambiar a 600 para pruebas*/
-  background: #fff;
+ .container{
+
+  background: #3de459;
   padding: 28px 32px;
-  overflow: hidden;
   border-radius: 18px;
   font-family: 'Roboto', sans-serif;
-  transition: 0.6s ease-out;
-}
 
-.search-box{
+   
+ .search-box{
   width: 100%;
   height: min-content;
   display: flex;
@@ -37,26 +33,25 @@ body{
 .search-box input {
   color: #06283d;
   width: 80%;
+  height: 50px;
   font-size: 24px;
   font-weight: 500;
-  text-transform: uppercase;
   padding-left: 32px;
 }
 
 .search-box input::placeholder{
   font-size: 20px;
   font-weight: 500;
-  color: #3d0606;
-  text-transform: capitalize;
+  color: #1d4429;
 }
 
 .search-box button{
   cursor: pointer;
-  width: 50px;
+  width: 100px;
   height: 50px;
   color: #06283d;
   background: #dff6ff;
-  border-radius: 50%;
+  border-radius: 10%;
   font-size: 22px;
   transition: 0.4s ease;
 }
@@ -68,7 +63,7 @@ body{
 
 .search-box i{
   position: absolute;
-  color: #06283d;
+  color: #013611;
   font-size: 28px;
 }
 
@@ -84,7 +79,7 @@ body{
 .weather-box .temperature {
 
   position: relative;
-  color: #06283d;
+  color: #013611;
   font-size: 4rem;
   font-weight: 800;
   margin-top: 30px;
@@ -100,7 +95,7 @@ body{
 }
 
 .weather-box .description {
-  color: #06283d;
+  color: #013611;
   font-size: 22px;
   font-weight: 500;
   text-transform: capitalize;
@@ -131,20 +126,20 @@ body{
 }
 
 .weather-details i{
-  color: #06283d;
+  color: #013611;
   font-size: 26px;
   margin-right: 10px;
   margin-top: 6px;
 }
 
 .weather-details span{
-  color: #06283d;
+  color: #013611;
   font-size: 22px;
   font-weight: 500;
 }
 
 .weather-details p{
-  color: #06283d;
+  color: #013611;
   font-size: 14px;
   font-weight: 500;
 }
@@ -153,14 +148,13 @@ body{
   width: 100%;
   text-align: center;
   margin-top: 50px;
-  scale: 0;
-  opacity: 0;
-  display: none;
 
 }
 
 .not-found img{
   width: 70%;
+  border-radius: 10%;
+
 }
 
 .not-found p{
@@ -170,20 +164,8 @@ body{
   margin-top: 12px;
 }
 
-.weather-box, .weather-details {
-  scale: 0;
-  opacity: 0;
-}
 
-.fadeIn{
-  animation: 0.5s fadeIn forwards;
-  animation-delay: 0.5s;
-}
 
-@keyframes fadeIn {
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-  
-}
+
+
+ }
