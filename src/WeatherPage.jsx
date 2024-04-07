@@ -10,6 +10,8 @@ export const WeatherPage = () => {
   const APIKey = '7abd4d15956620992b29321544dfdea5';
 
   const fetchWeatherData = (city) => {
+
+    
     if (!city) return;
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)

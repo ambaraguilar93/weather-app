@@ -1,4 +1,7 @@
 import React from 'react'
+import { Wind, Water } from 'react-bootstrap-icons';
+
+
 
 export const WeatherDisplay = ({ weatherData, error }) => {
 
@@ -35,7 +38,7 @@ export const WeatherDisplay = ({ weatherData, error }) => {
       weatherImageSrc = 'images/cloud.png';
        
       break;
-    case 'Haze':
+    case 'Fog':
       weatherImageSrc = 'images/mist.png';
       break;
     default:
@@ -47,10 +50,16 @@ export const WeatherDisplay = ({ weatherData, error }) => {
       <img src={weatherImageSrc} alt="Weather" />
       <div className="temperature">{parseInt(temp)}<span>°C</span></div>
       <div className="description">{description}</div>
-      <div className="weather-details">
+      <div className='details-content'>
+        <div className="weather-details">
+        <Water id='water-icon' />
         <div className="humidity">Humidity: <span>{humidity}%</span></div>
-        <div className="wind">Wind: <span>{parseInt(wind.speed)} Km/h</span></div>
+        <Wind id='wind-icon'/>
+        <div className="wind"> Wind: <span>{parseInt(wind.speed)} Km/h</span></div>
+        
+        </div>
       </div>
     </div>
+
   );
 };

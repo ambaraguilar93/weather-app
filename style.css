@@ -1,3 +1,6 @@
+/* Option 2: Import via CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
 *{
   margin: 0;
   padding: 0;
@@ -23,7 +26,7 @@ body{
   border-radius: 18px;
   font-family: 'Roboto', sans-serif;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
+  
    
  .search-box{
   width: 100%;
@@ -72,20 +75,21 @@ body{
   background: #066112;
 }
 
-.search-box i{
+/* .search-box i{
   position: absolute;
   color: #013611;
   font-size: 28px;
-}
+} */
 
 .weather-box{
   text-align: center;
 }
 
 .weather-box img{
-  background: #37802d;
   width: 40%;
   margin-top: 0%;
+  
+  
 }
 
 .weather-box .temperature {
@@ -95,8 +99,11 @@ body{
   color: #013611;
   font-size: 4rem;
   font-weight: 800;
-  margin-top: 10px;
-  margin-left: 217px;
+  margin-top: 70px;
+  margin-left: 30%;
+  border-radius: 10%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  
 
 }
 
@@ -115,26 +122,36 @@ body{
   margin-top: 30px;
 }
 
-.weather-details{
-  width: 100%;
-  display: inherit;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-
-.weather-details .humidity .weather-details .wind{
+.details-content {
   display: flex;
-  align-items: center;
-  width: 50%;
-  height: 100px;
+  justify-content: center;   
 }
 
+.weather-details {
+  color: #013611;
+  display: flex;
+  column-gap: 30px;
+  padding-top: 20px;
+  
+}
 
 .weather-details span{
   color: #013611;
   font-size: 22px;
   font-weight: 500;
+  display: inherit;
+} 
+
+.weather-details #wind-icon{
+  height: 50px;
+  width: 50px;
 }
+
+.weather-details #water-icon{
+  height: 50px;
+  width: 50px;
+}
+
 
 
 .not-found {
@@ -147,6 +164,7 @@ body{
 .not-found img{
   width: 70%;
   border-radius: 10%;
+  
 
 }
 
